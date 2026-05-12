@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="REPORTS REGRESSION suite" configfailurepolicy="continue">
+
+
+	<listeners>
+		<listener class-name="com.basesource.utils.ExtentReport" />
+		<listener class-name="com.basesource.utils.RetryListener" />
+	</listeners>
+
+	<test verbose="2" name="production policy" enabled="true">
+		<groups>
+			<run>
+				<include name="PRODUCTION_POLICY" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.testscripts.daasui.WEPPolicyPageTest" />
+		</classes>
+	</test>
+</suite>

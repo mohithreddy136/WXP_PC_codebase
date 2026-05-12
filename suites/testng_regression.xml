@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="REGRESSION suite" configfailurepolicy="continue"  parallel = "tests" thread-count = "2">
+
+
+	<listeners>
+		<listener class-name="com.basesource.utils.ExtentReport" />
+		<listener class-name="com.basesource.utils.RetryListener" />
+	</listeners>
+
+	<test verbose="2" name="Settings tests"
+		  enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSIONSETTINGS2" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.testscripts.daasui.SettingsTest" />
+		</classes>
+	</test>
+
+	<test verbose="2" name="Incident tests"
+		  enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSION" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.testscripts.daasui.IncidentTest" />
+		</classes>
+	</test>
+
+	<!-- <test verbose="2" name="What'sNew tests"
+		enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSION" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.testscripts.daasui.WhatsNewTest" />
+		</classes>
+	</test> -->
+
+	<test verbose="2" name="Partners tests"
+		  enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSION" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.testscripts.daasui.PartnersTest" />
+		</classes>
+	</test>
+
+	<test verbose="2" name="Users tests"
+		  enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSION" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.testscripts.daasui.UserTest" />
+		</classes>
+	</test>
+
+	<!-- <test verbose="2" name="SystemRequirements tests"
+		enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSION" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.testscripts.daasui.SystemRequirementsTest" />
+		</classes>
+	</test> -->
+
+	<test verbose="2" name="Companies tests"
+		  enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSIONCOMPANIES2" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.testscripts.daasui.CompaniesTest" />
+		</classes>
+	</test>
+
+	<test verbose="2" name="Dashboard tests"
+		  enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSIONDASHBOARD2" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.testscripts.daasui.DashboardTest" />
+		</classes>
+	</test>
+
+	<test verbose="2" name="Exp mgmt tests"
+		  enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSIONEXPMGMT" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.testscripts.daasui.ExperienceMgmtTest" />
+		</classes>
+	</test>
+	<!-- <test verbose="2" name="Campaigns tests" enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSIONCAMPAIGN2" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.testscripts.daasui.CampaignsTest" />
+		</classes>
+	</test>
+ -->
+	<test verbose="2" name="Devices tests" enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSIONDEVICES2" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.testscripts.daasui.DevicesTest" />
+		</classes>
+	</test>
+
+	<!-- <test verbose="2" name="SW Benchmark tests" enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSION" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.testscripts.daasui.BenchmarkTest" />
+		</classes>
+	</test>
+
+	<test verbose="2" name="Onboarding tests" enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSION" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.testscripts.daasui.OnboardingTest" />
+		</classes>
+	</test>
+
+	<test verbose="2" name="HP-DEX tests" enabled="true">
+	<groups>
+		<run>
+			<include name="REGRESSION" />
+		</run>
+	</groups>
+	<classes>
+		<class name="com.testscripts.daasui.HPDexTest" />
+	</classes>
+</test> -->
+
+</suite>

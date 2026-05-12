@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression Suite" configfailurepolicy="continue"
+	parallel="tests" thread-count="2">
+
+	<listeners>
+		<listener class-name="com.basesource.utils.ExtentReport" />
+		<listener class-name="com.basesource.utils.RetryListener" />
+	</listeners>
+
+	<test verbose="2" name="Dashboard tests" enabled="true">
+		<groups>
+			<run>
+				<include name="CAAS_REGRESSION" />
+				<include name="REGRESSIONDASHBOARD1" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.testscripts.daasui.DashboardTest" />
+		</classes>
+	</test>
+
+
+	<test verbose="2" name="Companies tests" enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSIONCOMPANIES1" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.testscripts.daasui.CompaniesTest" />
+			<class name="com.testscripts.daasui.PartnersTest" />
+		</classes>
+	</test>
+
+	<test verbose="2" name="Devices tests" enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSIONDEVICES1" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.testscripts.daasui.DevicesTest" />
+		</classes>
+	</test>
+
+ 
+	<test verbose="2" name="Preference tests"	enabled="true">
+
+		<groups>
+			<run>
+				<include name="REGRESSION" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.testscripts.daasui.PreferencesTest">
+			</class>
+		</classes>
+	</test>
+
+	
+	<test verbose="2" name="Settings tests"
+		enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSIONSETTINGS1" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.testscripts.daasui.SettingsTest" />
+		</classes>
+	</test>
+
+ <test verbose="2" name="ProductCatalog tests"
+		enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSION" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.testscripts.daasui.ProductCatalogTest" />
+		</classes>
+	</test>
+	
+	
+</suite>

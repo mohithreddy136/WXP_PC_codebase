@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="REPORTS REGRESSION suite" configfailurepolicy="continue">
+
+
+	<listeners>
+		<listener class-name="com.basesource.utils.ExtentReport" />
+		<listener class-name="com.basesource.utils.RetryListener" />
+	</listeners>
+
+	<!-- PLATFORMCX Test 1 -->
+	
+	<test verbose="2" name="platformcx tests-workforceExperienceLandingPageTest" enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSION_PLATFORMCX" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="com.testscripts.daasui.workforceExperienceLandingPageTest" />
+		</classes>
+	</test>	
+			
+	<!-- PLATFORMCX Test 2 -->
+	
+	<test verbose="2" name="platformcx tests-WorkforceExperienceSystemRequirementTest" enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSION_PLATFORMCX" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="com.testscripts.daasui.WorkforceExperienceSystemRequirementTest" />
+		</classes>
+	</test>
+	
+	<!-- PLATFORMCX Test 3 -->
+	
+	<test verbose="2" name="platformcx tests-WorkforceExperienceServiceLevelAgreementTest" enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSION_PLATFORMCX" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="com.testscripts.daasui.WorkforceExperienceServiceLevelAgreementTest" />
+		</classes>
+	</test>		 
+ 	
+	
+	<!-- PLATFORMCX Test 4 -->
+	
+	<test verbose="2" name="platformcx tests-WEXSettingTest" enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSION_PLATFORMCX" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="com.testscripts.daasui.WEXSettingTest" />
+		</classes>
+	</test>			
+	
+	<!-- PLATFORMCX Test 5 -->
+	
+	<test verbose="2" name="platformcx tests-WEXCompanyOverviewTest" enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSION_PLATFORMCX" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="com.testscripts.daasui.WEXCompanyOverviewTest" />
+		</classes>
+	</test>	
+	
+	<!-- PLATFORMCX Test 6 -->
+	
+	<test verbose="2" name="platformcx tests-WEXDashboardTest" enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSION_PLATFORMCX" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="com.testscripts.daasui.WEXDashboardTest" />
+		</classes>
+	</test>	
+	
+	<!-- PLATFORMCX Test 7 -->
+	
+	<test verbose="2" name="platformcx tests-WEPCustomerHomeTest" enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSION_PLATFORMCX" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="com.testscripts.daasui.WEPCustomerHomeTest" />
+		</classes>
+	</test>		
+	
+	<!-- PLATFORMCX Test 8 -->
+	
+	<test verbose="2" name="platformcx tests-WEXSoftwareTest" enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSION_PLATFORMCX" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="com.testscripts.daasui.WEXSoftwareTest" />
+		</classes>
+	</test>		
+	
+			 
+	<!-- PLATFORMCX Test 9 -->
+	
+	<test verbose="2" name="platformcx tests-WEPNewLoginPageTest" enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSION_PLATFORMCX" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="com.testscripts.daasui.WEPNewLoginPageTest" />
+		</classes>
+	</test>	
+	
+	<!-- PLATFORMCX Test 10 -->
+	
+	<test verbose="2" name="platformcx tests-WEPEmptyDashboardTest" enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSION_PLATFORMCX" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="com.testscripts.daasui.WEPEmptyDashboardTest" />
+		</classes>
+	</test>	
+	 
+	 <!-- PLATFORMCX Test 11 -->
+	
+	<test verbose="2" name="platformcx tests-WEPOnboardingChecklistFlowTest" enabled="false">
+		<groups>
+			<run>
+				<include name="REGRESSION_PLATFORMCX" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="com.testscripts.daasui.WEPOnboardingChecklistFlowTest" />
+		</classes>
+	</test>
+
+	<!-- PLATFORMCX Test 12 -->
+
+	<test verbose="2" name="platformcx tests-UserProfileTest" enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSION_PLATFORMCX" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.testscripts.daasui.UserProfileTest" />
+		</classes>
+	</test>
+
+	<!-- PLATFORMCX Test 13 -->
+
+	<test verbose="2" name="platformcx tests-ErrorCodeTest" enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSION_PLATFORMCX" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.testscripts.daasui.ErrorCodeTest" />
+		</classes>
+	</test>
+
+	<!-- PLATFORMCX Test 14 -->
+
+	<test verbose="2" name="platformcx tests-WEPWhatsNewTest" enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSION_PLATFORMCX" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.testscripts.daasui.WEPWhatsNewTest" />
+		</classes>
+	</test>
+
+	<!-- PLATFORMCX Test 15 -->
+
+	<test verbose="2" name="platformcx tests-WEPDiscoveryTest" enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSION_PLATFORMCX" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.testscripts.daasui.WEPDiscoveryTest" />
+		</classes>
+	</test>
+</suite>

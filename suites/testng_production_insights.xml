@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Analytics Production Suite" >
+
+
+	<listeners>
+		<listener class-name="com.basesource.utils.ExtentReport" />
+		<listener class-name="com.basesource.utils.RetryListener" />
+	</listeners>
+
+
+
+	<test verbose="2" name="Insights tests" enabled="true">
+		<groups>
+			<run>
+				<include name="PRODUCTION_INSIGHTS" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.testscripts.daasui.AnalyticsTest" />
+		</classes>
+	</test>
+		 
+	
+</suite>

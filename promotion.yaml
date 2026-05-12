@@ -1,0 +1,31 @@
+resources:
+  repositories:
+  - repository: codeway
+    type: githubenterprise
+    name: codeway/templates
+    endpoint: ghe
+
+name: $(Date:yyyyMMdd)$(Rev:.r)
+
+trigger:
+  branches:
+    include:
+    - staging
+    - production
+  paths:
+    include:
+    - promotion.txt
+
+pr: none
+
+variables:
+- group: Defaults
+- template: /projects/techpulse/lib/promotion-vars.yaml@codeway
+  parameters:
+    project: techpulse
+    service: selenium-wex-automation
+
+stages:
+- template: /projects/techpulse/stages/promotion.yaml@codeway
+  parameters:
+    dockerRegistryConnection: ${{ variables.dockerRegistryConnection }}

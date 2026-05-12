@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="VYOPTA REGRESSION SUITE" configfailurepolicy="continue">
+
+
+    <listeners>
+        <listener class-name="com.basesource.utils.ExtentReport" />
+        <listener class-name="com.basesource.utils.RetryListener" />
+    </listeners>
+
+    <test verbose="2" name="VYOPTA tests" enabled="true">
+        <groups>
+            <run>
+                <include name="REGRESSION_VYOPTA" />
+            </run>
+        </groups>
+        <classes>
+            <class name="com.testscripts.daasui.WXPVyoptaTest" />
+        </classes>
+    </test>
+</suite>

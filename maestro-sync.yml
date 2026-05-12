@@ -1,0 +1,132 @@
+resources:
+  repositories:
+  - repository: templates
+    type: githubenterprise
+    name: codeway/templates
+    endpoint: ghe
+
+trigger: none
+pr: none
+
+schedules:
+- cron: '0 0 * * 0' # Once a week on a Sunday to avoid excess calls
+  displayName: Regularly scheduled sync
+  branches:
+    include:
+      - master
+  always: true
+
+variables:
+- group: Defaults
+- group: maestro-auth
+# Add teams_webhook_url to one of your variable groups or create a new group
+# teams_webhook_url should contain your Microsoft Teams webhook URL
+
+stages:
+- template: /projects/Maestro/stages/maestro-sync-properties-v0.yaml@templates
+  parameters:
+    gitUsername: $(ghe_user)
+    gitToken: $(ghe_auth_token)
+    authKey: $(maestro_auth_token)
+    components: daas_ui idm lhreports MPI-Incident-management-service-backend-Properties Device-Registry-Service-Properties MPI-Reporting-report-html-view-UI-JSON MPI-Reporting-template-list-UI-JSON MPI-Generic-Grid-JSON lhserver MPI-Generic-Graph-JSON MPI-Reporting-LHreports_service MPI-Incident-MicroUI-JSON daas_reports_ui roles_meta_service daas_entitlement_notifier_service Campaign-backend-properties swbenchmark_service dashboard_service rpl-backend-properties notification_service
+    outDir: locales
+    createPR: true
+
+- stage: NotifyTeams
+  displayName: 'Send Teams Notification'
+  dependsOn: MaestroSyncProperties
+  condition: always()
+  jobs:
+  - job: SendTeamsMessage
+    displayName: 'Send Teams Notification'
+    pool:
+      vmImage: 'ubuntu-latest'
+    variables:
+      ghOutput: $[ stageDependencies.MaestroSyncProperties.MaestroSyncJob.outputs['GitHubSync.maestroPrUrl'] ]
+    steps:
+    - task: PowerShell@2
+      displayName: 'Send Teams Webhook Notification'
+      inputs:
+        targetType: 'inline'
+        script: |
+          $webhookUrl = "$(teams_webhook_url)"
+          $buildStatus = "$(Agent.JobStatus)"
+          $buildUrl = "$(System.TeamFoundationCollectionUri)$(System.TeamProject)/_build/results?buildId=$(Build.BuildId)"
+          
+          if ($buildStatus -eq "Succeeded") {
+            $color = "28a745"
+            $status = "✅ SUCCESS"
+          } elseif ($buildStatus -eq "Failed") {
+            $color = "dc3545"
+            $status = "❌ FAILED"
+          } else {
+            $color = "ffc107"
+            $status = "⚠️ $buildStatus"
+          }
+          
+          $payload = @{
+            "@type" = "MessageCard"
+            "@context" = "http://schema.org/extensions"
+            "summary" = "Maestro Sync Build Notification"
+            "themeColor" = $color
+            "sections" = @(
+              @{
+                "activityTitle" = "Maestro Sync Pipeline"
+                "activitySubtitle" = "Build $(Build.BuildNumber)"
+                "facts" = @(
+                  @{
+                    "name" = "Status"
+                    "value" = $status
+                  },
+                  @{
+                    "name" = "Repository"
+                    "value" = "$(Build.Repository.Name)"
+                  },
+                  @{
+                    "name" = "Branch"
+                    "value" = "$(Build.SourceBranchName)"
+                  },
+                  @{
+                    "name" = "Triggered By"
+                    "value" = "$(Build.RequestedFor)"
+                  },
+                  @{
+                    "name" = "Message"
+                    "value" = "$(ghOutput)"
+                  }
+                )
+                "markdown" = $true
+              }
+            )
+            "potentialAction" = @(
+              @{
+                "@type" = "OpenUri"
+                "name" = "View Build"
+                "targets" = @(
+                  @{
+                    "os" = "default"
+                    "uri" = $buildUrl
+                  }
+                )
+              },
+              @{
+                "@type" = "OpenUri"
+                "name" = "Open PR"
+                "targets" = @(
+                  @{
+                    "os" = "default"
+                    "uri" = "$(ghOutput)"
+                  }
+                )
+              }
+            )
+          }
+          
+          $json = $payload | ConvertTo-Json -Depth 10
+          
+          try {
+            $response = Invoke-RestMethod -Uri $webhookUrl -Method Post -Body $json -ContentType "application/json"
+            Write-Host "Teams notification sent successfully"
+          } catch {
+            Write-Warning "Failed to send Teams notification: $($_.Exception.Message)"
+          }

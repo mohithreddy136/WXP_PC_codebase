@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="WEP Production Suite">
+	<listeners>
+		<listener class-name="com.basesource.utils.ExtentReport" />
+		<listener class-name="com.basesource.utils.RetryListener" />
+	</listeners>
+
+	<test verbose="2" name="Siteup Tests" enabled="true">
+		<groups>
+			<run>
+				<include name="PRODUCTION_SITEUP" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.testscripts.daasui.WorkforceExperienceSiteUpTest" />
+		</classes>
+	</test>
+
+	<test verbose="2" name="Score tests" enabled="true">
+		<groups>
+			<run>
+				<include name="PRODUCTION_SCORE" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.testscripts.daasui.DEXTest" />
+		</classes>
+	</test>
+
+<!-- 	<test verbose="2" name="Employee Engagement Score tests" enabled="true"> -->
+<!-- 		<groups> -->
+<!-- 			<run> -->
+<!-- 				<include name="PRODUCTION_EE_SCORE" /> -->
+<!-- 			</run> -->
+<!-- 		</groups> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.testscripts.daasui.WEXEEScoreTest" /> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+
+   <test verbose="2" name="Config Scripts Tests" enabled="true">
+		<groups>
+			<run>
+				<include name="PRODUCTION_CONFIGSCRIPTS" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.testscripts.daasui.WEPScriptsTest" />
+		</classes>
+	</test>
+
+	<test verbose="2" name="Insights tests" enabled="true">
+		<groups>
+			<run>
+				<include name="PRODUCTION_INSIGHTS" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.testscripts.daasui.AnalyticsTest" />
+		</classes>
+	</test>
+
+<!--	<test verbose="2" name="Inventory Ingestion tests" enabled="true">-->
+<!--		<groups>-->
+<!--			<run>-->
+<!--				<include name="PRODUCTION_INVENTORYINGESTION" />-->
+<!--			</run>-->
+<!--		</groups>-->
+
+<!--		<classes>-->
+<!--			<class name="com.testscripts.daasui.WEPDeviceListTest" />-->
+<!--		</classes>-->
+<!--	</test>-->
+
+	<test verbose="2" name="Partner CX tests" enabled="true">
+		<groups>
+			<run>
+				<include name="PRODUCTION_PARTNERCX" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.testscripts.daasui.WEPPartnerTest" />
+		</classes>
+	</test>
+
+	<test verbose="2" name="platformcx tests-WEXSettingTest" enabled="true">
+		<groups>
+			<run>
+				<include name="PRODUCTION_PLATFORMCX" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="com.testscripts.daasui.WEXSettingTest" />
+		</classes>
+	</test>	
+	
+	<test verbose="2" name="platformcx tests-WEXCompanyOverviewTest" enabled="true">
+		<groups>
+			<run>
+				<include name="PRODUCTION_PLATFORMCX" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="com.testscripts.daasui.WEXCompanyOverviewTest" />
+		</classes>
+	</test>
+	
+	<test verbose="2" name="platformcx tests-WEXDashboardTest" enabled="true">
+		<groups>
+			<run>
+				<include name="PRODUCTION_PLATFORMCX" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="com.testscripts.daasui.WEXDashboardTest" />
+		</classes>
+	</test>
+		
+	<test verbose="2" name="platformcx tests-WEPWhatsNewTest" enabled="true">
+		<groups>
+			<run>
+				<include name="PRODUCTION_PLATFORMCX" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="com.testscripts.daasui.WEPWhatsNewTest" />
+		</classes>
+	</test>
+	
+	
+    <test verbose="2" name="Pulses tests" enabled="true">
+		<groups>
+			<run>
+				<include name="PRODUCTION_PULSES" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.testscripts.daasui.WEPPulsesTest" />
+		</classes>
+	</test>
+
+	<test verbose="2" name="WEP Sustainability tests" enabled="true">
+		<groups>
+			<run>
+				<include name="PRODUCTION_INTEGRATIONS" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.testscripts.daasui.WEPSustainabilityTest" />
+		</classes>
+	</test>
+	
+		<!-- Group Test  -->
+	<test verbose="2" name="WEP Groups Test" enabled="true">
+		<groups>
+			<run>
+				<include name="PRODUCTION_GROUPS" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.testscripts.daasui.WEPGroupsTest" />
+		</classes>
+	</test>
+	
+<!--	<test verbose="2" name="Subscribe tests" enabled="true">-->
+<!--		<groups>-->
+<!--			<run>-->
+<!--				<include name="PRODUCTION_SUBSCRIBE" />-->
+<!--			</run>-->
+<!--		</groups>-->
+
+<!--		<classes>-->
+<!--			<class name="com.testscripts.daasui.WEPCustomerSubscriptionTest" />-->
+<!--			<class name="com.testscripts.daasui.WEPPartnerSubscriptionTest" />-->
+<!--		</classes>-->
+<!--	</test>-->
+
+   <test verbose="2" name="Accounts tests-WEXHelpAndSupportTest" enabled="true">
+		<groups>
+			<run>
+				<include name="PRODUCTION_ACCOUNTS" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="com.testscripts.daasui.WEXHelpAndSupportTest" />
+		</classes>
+	</test>
+	
+	<test verbose="2" name="Accounts tests-WEXLogTest" enabled="true">
+		<groups>
+			<run>
+				<include name="PRODUCTION_ACCOUNTS" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="com.testscripts.daasui.WEXLogTest" />
+		</classes>
+	</test>
+	
+	<test verbose="2" name="WEP Accounts Users Testcases" enabled="true">
+		<groups>
+			<run>
+				<include name="PRODUCTION_ACCOUNTS" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="com.testscripts.daasui.WEXCustomerUserTest" />
+		</classes>
+	</test>
+
+	<test verbose="2" name="App Insights tests" enabled="true">
+		<groups>
+			<run>
+				<include name="PRODUCTION_APP_INSIGHTS" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.testscripts.daasui.DEXTest" />
+		</classes>
+	</test>
+	
+<!-- Alerts Test 1 -->
+<test verbose="2" name="FRAMEWORKCORE tests-activeAlertTest" enabled="true">
+<groups>
+<run>
+<include name="PRODUCTION_FRAMEWORKCORE" />
+</run>
+</groups>
+<classes>
+<class name="com.testscripts.daasui.WEPAlertsDashboardPageTest" />
+</classes>
+</test>	
+<!-- Alerts Test 2 -->
+ 
+	<test verbose="2" name="FRAMEWORKCORE tests-alertManagementTest" enabled="true">
+<groups>
+<run>
+<include name="PRODUCTION_FRAMEWORKCORE" />
+</run>
+</groups>
+<classes>
+<class name="com.testscripts.daasui.WEPAlertManagementPageTest" />					
+</classes>
+</test>
+
+<!-- Alerts Test 3 -->
+ 
+<test verbose="2" name="FRAMEWORKCORE tests-partneralertManagementTest" enabled="true">
+<groups>
+<run>
+<include name="PRODUCTION_FRAMEWORKCORE" />
+</run>
+</groups>
+<classes>
+<class name="com.testscripts.daasui.WEPPartnerAlertsTest" />					
+</classes>
+</test>
+	
+</suite> <!-- Default suite -->
+

@@ -1,0 +1,16 @@
+2025-11-25T17:18:20+05:30: Selected environment: stage
+2025-11-25T17:18:20+05:30: Selected region: us
+2025/11/25 17:18:20 Processing batch 1 with 1 serial numbers
+2025/11/25 17:18:28 All batches completed. Total devices processed: 1
+
+--- Enrollment Metrics ---
+DeviceID                                     |SerialNumber  |EnrollmentTime  |DiscoveryTime  |StatusTime  |Success  |FailureReason
+fhCNlBAEuMnKAd6d8C5GB5NYmelGDGhw1HhCoTbeiLw  |CPAUTO188689  |3.0662722s      |3.8298787s     |1.27973s    |true     |
+
+--- Metrics Summary ---
+Total Devices: 1
+Successful Enrollments: 1
+Failed Enrollments: 0
+Average Enrollment API Time: 3.0662722s
+Average Discovery API Time: 3.8298787s
+Average Enrolment Status API Time: 1.27973s

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="SUBSCRIPTION PRODUCTION suite" configfailurepolicy="continue">
+
+	<listeners>
+		<listener class-name="com.basesource.utils.ExtentReport" />
+		<listener class-name="com.basesource.utils.RetryListener" />
+	</listeners>
+    <!-- Add-Ons tab test -->
+	<test verbose="2" name="Add-Ons test case" enabled="true">
+		<groups>
+			<run>
+				<include name="PRODUCTION_SUBSCRIBE" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.testscripts.daasui.WEPAccountsAddonsTest" />
+		</classes>
+	</test>
+    <!-- Licenses tab test -->
+	<test verbose="2" name="Licenses tab testcases" enabled="true">
+		<groups>
+			<run>
+				<include name="PRODUCTION_SUBSCRIBE" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.testscripts.daasui.WEPAccountsLicensesTest" />
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression Suite" configfailurepolicy="continue"
+	parallel="tests" thread-count="2">
+	<listeners>
+		<listener class-name="com.basesource.utils.ExtentReport" />
+		<listener class-name="com.basesource.utils.RetryListener" />
+	</listeners>
+	<test verbose="2" name="WEX Dashboard tests" enabled="true">
+		<groups>
+			<run>
+				<include name="WorkforceExperience_PAGELOAD" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.testscripts.daasui.WorkforceExperienceSiteUpTest" />
+		</classes>
+	</test>
+	
+</suite>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="REPORTS REGRESSION suite" configfailurepolicy="continue">
+
+
+	<listeners>
+		<listener class-name="com.basesource.utils.ExtentReport" />
+		<listener class-name="com.basesource.utils.RetryListener" />
+	</listeners>
+
+	<!-- ACCOUNTS Test 1 -->
+	
+	<test verbose="2" name="Accounts Users Testcases" enabled="true">
+		<groups>
+			<run>
+				<include name="PRODUCTION_ACCOUNTS" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="com.testscripts.daasui.WEXCustomerUserTest" />
+		</classes>
+	</test>	
+	
+	<test verbose="2" name="Accounts tests-WEXHelpAndSupportTest" enabled="true">
+		<groups>
+			<run>
+				<include name="PRODUCTION_ACCOUNTS" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.testscripts.daasui.WEXHelpAndSupportTest" />
+		</classes>
+	</test>
+	<test verbose="2" name="Accounts tests-WEXLogTest" enabled="true">
+		<groups>
+			<run>
+				<include name="PRODUCTION_ACCOUNTS" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.testscripts.daasui.WEXLogTest" />
+		</classes>
+	</test>
+		 
+	
+</suite>

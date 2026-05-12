@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="REPORTS REGRESSION suite" configfailurepolicy="continue">
+
+	<listeners>
+		<listener class-name="com.basesource.utils.ExtentReport" />
+		<listener class-name="com.basesource.utils.RetryListener" />
+	</listeners>
+
+	<!-- ACCOUNTS Test 1 -->
+	 <test verbose="2" name="Accounts Users Testcases" enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSION_ACCOUNTS" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="com.testscripts.daasui.WEXCustomerUserTest" />
+		</classes>
+	</test>	 
+	
+	<!-- ACCOUNTS Test 2 -->
+    <test verbose="2" name="Accounts Root login Testcases" enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSION_ACCOUNTS" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="com.testscripts.daasui.WEPRootLoginTest" />
+		</classes>
+	</test>	 
+	
+	<!-- ACCOUNTS Test 3 -->
+    <test verbose="2" name="Accounts Create Company Testcases" enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSION_ACCOUNTS" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="com.testscripts.daasui.WEPCreateCompanyTest" />
+		</classes>
+	</test>	 
+		 
+		 
+		<!--  ACCOUNTS Test 4 -->
+    <test verbose="2" name="Accounts MSP Login Testcases" enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSION_ACCOUNTS" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="com.testscripts.daasui.WEPMSPAdminTest" />
+		</classes>
+	</test>	 
+	
+		<!-- ACCOUNTS Test 5 -->
+	
+	<test verbose="2" name="Accounts tests-WEXHelpAndSupportTest" enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSION_ACCOUNTS" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="com.testscripts.daasui.WEXHelpAndSupportTest" />
+		</classes>
+	</test>
+	
+	<!-- ACCOUNTS Test 6 -->
+	
+	<test verbose="2" name="Accounts tests-WEXLogTest" enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSION_ACCOUNTS" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="com.testscripts.daasui.WEXLogTest" />
+		</classes>
+	</test>	
+	
+	<!-- ACCOUNTS Test 7 -->
+	
+	<test verbose="2" name="Accounts tests-WXPRolesandPermissionTest" enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSION_ACCOUNTS" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="com.testscripts.daasui.WXPRolesandPermissionTest" />
+		</classes>
+	</test>	
+	
+	<!-- ACCOUNTS Test 8 -->
+	
+	<test verbose="2" name="Accounts tests-WEXTabsVisibilityRolesTest" enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSION_ACCOUNTS" />
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="com.testscripts.daasui.WEXTabsVisibilityRolesTest" />
+		</classes>
+	</test>	
+	
+</suite>

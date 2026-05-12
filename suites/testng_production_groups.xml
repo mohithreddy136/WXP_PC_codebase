@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="GROUPS PRODUCTION suite" configfailurepolicy="continue">
+	<listeners>
+		<listener class-name="com.basesource.utils.ExtentReport" />
+		<listener class-name="com.basesource.utils.RetryListener" />
+	</listeners>
+	
+	<!-- Groups Test  -->
+	<test verbose="2" name="WEP-MetaServices-Groups" enabled="true">
+		<groups>
+			<run>
+				<include name="PRODUCTION_GROUPS" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.testscripts.daasui.WEPGroupsTest" />
+		</classes>
+	</test>
+</suite>

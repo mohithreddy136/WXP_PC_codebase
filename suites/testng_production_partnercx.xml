@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="PARTNERCX PRODUCTION SUITE" configfailurepolicy="continue">
+
+
+	<listeners>
+		<listener class-name="com.basesource.utils.ExtentReport" />
+		<listener class-name="com.basesource.utils.RetryListener" />
+	</listeners>
+
+	<test verbose="2" name="Partner Tests - WEXPartnerTest" enabled="true">
+		<groups>
+			<run>
+				<include name="PRODUCTION_PARTNERCX" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.testscripts.daasui.WEPPartnerTest" />
+		</classes>
+	</test>
+
+	<test verbose="2" name="Partner Tests - WEPPartnerCustomersTest" enabled="true">
+		<groups>
+			<run>
+				<include name="PRODUCTION_PARTNERCX" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.testscripts.daasui.WEPPartnerCustomersTest" />
+		</classes>
+	</test>
+
+	<test verbose="2" name="Partner Tests - WEPPartnerUsersTest" enabled="true">
+		<groups>
+			<run>
+				<include name="PRODUCTION_PARTNERCX" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.testscripts.daasui.WEPPartnerUsersTest" />
+		</classes>
+	</test>
+
+</suite>

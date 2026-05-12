@@ -1,0 +1,63 @@
+{
+    "fields": {
+        "assignee": {
+            "id": "712020:c368c346-0148-437c-96d6-572eda2c1cf6"
+        },
+        "components": [],
+        "customfield_10010": "20",
+        "description": {
+            "content": [
+                {
+                    "content": [
+                        {
+                            "text": "Executed workflow",
+                            "type": "text"
+                        }
+                    ],
+                    "type": "paragraph"
+                }
+            ],
+            "type": "doc",
+            "version": 1
+        },
+        "duedate": "2026-05-11",
+        "environment": {
+            "content": [
+                {
+                    "content": [
+                        {
+                            "text": "UAT",
+                            "type": "text"
+                        }
+                    ],
+                    "type": "paragraph"
+                }
+            ],
+            "type": "doc",
+            "version": 1
+        },
+        "fixVersions": [],
+        "issuetype": {
+            "id": "10020",
+            "name": "[System] Incident"
+        },
+        "labels": [],
+        "parent": null,
+        "priority": {
+            "id": "3"
+        },
+        "project": {
+            "id": "10003"
+        },
+        "reporter": {
+            "id": "712020:c368c346-0148-437c-96d6-572eda2c1cf6"
+        },
+        "summary": "Executed workflow",
+        "timetracking": {
+            "originalEstimate": "10",
+            "remainingEstimate": "5"
+        },
+        "versions": []
+    },
+    "update": {}
+}

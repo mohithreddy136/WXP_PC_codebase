@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="integrationQA_CUJ REGRESSION suite" configfailurepolicy="continue">
+	<listeners>
+		<listener class-name="com.basesource.utils.ExtentReport" />
+		<listener class-name="com.basesource.utils.RetryListener" />
+	</listeners>
+
+<!-- CUJ Test 1 -->
+	<test verbose="2" name="CUJ tests - WEPDeviceListTest" enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSION_INTEGRATIONQA_CUJ" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.testscripts.daasui.WEPDeviceListTest" />
+		</classes>
+	</test>
+
+<!-- CUJ Test 2 -->
+	<test verbose="2" name="CUJ tests - WEPCustomerHomeTest" enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSION_INTEGRATIONQA_CUJ" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.testscripts.daasui.WEPCustomerHomeTest" />
+		</classes>
+	</test>
+
+<!-- CUJ Test 3 -->
+	<test verbose="2" name="CUJ tests - workforceExperienceLandingPageTest" enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSION_INTEGRATIONQA_CUJ" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.testscripts.daasui.workforceExperienceLandingPageTest" />
+		</classes>
+	</test>
+
+<!-- CUJ Test 4 -->
+	<test verbose="2" name="CUJ tests - WEPScriptsTest" enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSION_INTEGRATIONQA_CUJ" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.testscripts.daasui.WEPScriptsTest" />
+		</classes>
+	</test>
+
+<!-- CUJ Test 5 -->
+	<test verbose="2" name="CUJ tests - AnalyticsTest" enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSION_INTEGRATIONQA_CUJ" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.testscripts.daasui.AnalyticsTest" />
+		</classes>
+	</test>
+
+<!-- CUJ Test 6 -->
+	<test verbose="2" name="CUJ tests - WEXDashboardTest" enabled="false">
+		<groups>
+			<run>
+				<include name="REGRESSION_INTEGRATIONQA_CUJ" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.testscripts.daasui.WEXDashboardTest" />
+		</classes>
+	</test>
+
+<!-- CUJ Test 7 -->
+	<test verbose="2" name="CUJ tests - WEPPulsesTest" enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSION_INTEGRATIONQA_CUJ" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.testscripts.daasui.WEPPulsesTest" />
+		</classes>
+	</test>
+
+<!-- CUJ Test 8 -->
+	<test verbose="2" name="CUJ tests - WEPPartnerCustomersTest" enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSION_INTEGRATIONQA_CUJ" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.testscripts.daasui.WEPPartnerCustomersTest" />
+		</classes>
+	</test>
+
+<!-- CUJ Test 9 -->
+	<test verbose="2" name="CUJ tests - WEXCustomerUserTest" enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSION_INTEGRATIONQA_CUJ" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.testscripts.daasui.WEXCustomerUserTest" />
+		</classes>
+	</test>
+
+<!-- CUJ Test 10 -->
+	<test verbose="2" name="CUJ tests - DEXTest" enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSION_INTEGRATIONQA_CUJ" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.testscripts.daasui.DEXTest" />
+		</classes>
+	</test>
+	
+<!-- CUJ Test 11 -->
+	<test verbose="2" name="CUJ tests - SustainabilityTest" enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSION_INTEGRATIONQA_CUJ" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.testscripts.daasui.WEPSustainabilityTest" />
+		</classes>
+	</test>
+    
+<!-- CUJ Test 12 -->
+	<test verbose="2" name="CUJ tests - WEPPolicyPageTest" enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSION_INTEGRATIONQA_CUJ" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.testscripts.daasui.WEPPolicyPageTest" />
+		</classes>
+	</test>
+
+<!-- CUJ Test 13 -->
+	<test verbose="2" name="CUJ tests - WEPGroupsTest" enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSION_INTEGRATIONQA_CUJ" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.testscripts.daasui.WEPGroupsTest" />
+		</classes>
+	</test>
+</suite>

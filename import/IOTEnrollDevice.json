@@ -1,0 +1,38 @@
+{"analytics": {
+    "analytics_class_version": "1.1",
+    "client_version": "3.20.752.0",
+    "date_time": "20250207T112104",
+    "enroll_method": "Company Pin",
+    "enroll_status": "Success",
+    "enrollment_confirmation_selection": "Not Used",
+    "failure_reason": "",
+    "optin_silent": "Silent",
+    "silent_param_used": "Silent"
+  },
+  "csr": "",
+  "data": {
+    "byod": false,
+    "client_type": "Agent",
+    "country_code": "US",
+    "deviceOwnerEmail": "",
+    "deviceOwnerName": "",
+    "device_id": "",
+    "device_model": "HP ZBook 14u G4",
+    "device_type": "Notebook",
+    "disk": "463605756",
+    "graphics": "Microsoft Basic Display Adapter",
+    "manufacturer": "HP",
+    "memory": "32 GB 2400 MHz",
+    "name": "1BA8585KKK",
+    "operating_system": "Microsoft Windows 10 Enterprise",
+    "os_architecture": "amd64",
+    "os_system_ui_lang": "en-us",
+    "processor": "Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz",
+    "serial_number": "Test1234Tbane",
+    "feature_byte": "3X476J6S6b7B7M7Q7U7W7m7saBaEapaqauawbhcAdUpqqqfPhKjhk8",
+    "bod" : "08/28/2021"
+  },
+  "deviceId": "",
+  "tenantId": "",
+  "token": ""
+}

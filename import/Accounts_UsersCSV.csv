@@ -1,0 +1,5 @@
+Full Name (mandatory),Email Id (mandatory),Roles (mandatory),IdpType (mandatory)
+useraddition1,CSVUserseraddition1@hpmsqa.mailinator.com,it_admin,HPID
+useraddition 2,CSVUserseraddition2@hpmsqa.mailinator.com,reports_admin,HPID
+useraddition 3,CSVUserseraddition3@hpmsqa.mailinator.com,connector_admin,HPID
+useraddition 4,CSVUserseraddition4@hpmsqa.mailinator.com,developer,HPID

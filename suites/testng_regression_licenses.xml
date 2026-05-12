@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="SUBSCRIPTION REGRESSION suite" configfailurepolicy="continue">
+
+
+	<listeners>
+		<listener class-name="com.basesource.utils.ExtentReport" />
+		<listener class-name="com.basesource.utils.RetryListener" />
+	</listeners>
+
+	<test verbose="2" name="WEP SUBSCRIPTION Test" enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSION_SUBSCRIBE" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.testscripts.daasui.WEPAccountsLicensesTest" />
+		</classes>
+	</test>
+
+</suite>

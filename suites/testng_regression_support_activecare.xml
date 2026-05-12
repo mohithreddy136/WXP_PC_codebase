@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ActiveCare Test Suite">
+
+  <!-- ACTIVECARE TEST CASE 1 -->
+  <test verbose="1" name="Hardware Support Option is enabled or not" enabled="true">
+    <groups>
+      <run>
+        <include name="REGRESSION_ACTIVECARE" />
+      </run>
+    </groups>
+    <classes>
+    <class name="com.testscripts.daasui.WEPSupportActiveCareTest" />
+</classes>
+  </test>
+
+</suite>

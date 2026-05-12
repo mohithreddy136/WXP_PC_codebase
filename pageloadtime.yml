@@ -1,0 +1,51 @@
+# HP CodeWay fixed header to load the pipeline templates
+resources:
+  repositories:
+    - repository: templates
+      type: githubenterprise
+      name: codeway/templates
+      endpoint: ghe
+
+variables:
+  - name: System.Debug
+    value: false
+  - group: wex_qa_automation
+
+pool: 'codeway-aws-win2022'
+stages:
+  - stage: RunUITests
+    condition: in(variables['Build.SourceBranch'], 'refs/heads/master')
+    displayName: 'Run UI Tests'
+    jobs:
+      - job: RunUITestsOnAgentJob
+        timeoutInMinutes: 360
+        displayName: 'Run UI Test Cases'
+        steps:
+          - template: steps/aws/aws-assume-role-v0.yaml@templates
+            parameters:
+              roleARN: $(role_arn)
+              externalId: $(external_ID)
+          - task: CmdLine@2
+            inputs:
+              script: |
+                aws s3 cp s3://swapps-builds/Selenium_DaaS_Automation/production/credentials/ $(Agent.BuildDirectory)/s/credentials/ --recursive
+          - task: CmdLine@2
+            inputs:
+              prodEnvironment: '$(PROD-ENVIRONMENT)'
+              script: mvn test -DsuiteXmlFile=testng_PageLoad.xml -Denvironment=US-PROD-WEP -DbrowserName=edge -DlanguageCode=ENGLISH -DosName=WINDOWS -DuiVersion=VENEER3 -DbuildNumber=$(Build.BuildNumber);
+          - task: PublishPipelineArtifact@1
+            inputs:
+              targetPath: '$(Agent.BuildDirectory)\s\import\LoadtimeFile'
+              artifact: 'MyArtifacts'
+          - task: PublishPipelineArtifact@1
+            inputs:
+              targetPath: '$(Agent.BuildDirectory)\s\test-screenshots\'
+              artifact: 'MyArtifactScreenShots'
+          - template: steps/aws/aws-assume-role-v0.yaml@templates
+            parameters:
+              roleARN: $(role_arn_analytics)
+              externalId: $(external_id_analytics)
+          - task: CmdLine@2
+            inputs:
+              script: |
+                aws s3 cp $(Agent.BuildDirectory)/s/import/LoadtimeFile s3://hpidaas/stage/data/out/databricks/magnumpi/PageLoadTime/$(Build.BuildNumber)/PageLoadTime --recursive --sse aws:kms --sse-kms-key-id arn:aws:kms:us-west-2:271380526857:key/c2aecfda-546e-4b39-b0e2-52ce0bb2ee9d --recursive --acl "bucket-owner-full-control"

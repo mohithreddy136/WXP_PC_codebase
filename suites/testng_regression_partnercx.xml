@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="PARTNERCX REGRESSION SUITE" configfailurepolicy="continue">
+
+
+	<listeners>
+		<listener class-name="com.basesource.utils.ExtentReport" />
+		<listener class-name="com.basesource.utils.RetryListener" />
+	</listeners>
+
+	<test verbose="2" name="Partner Tests - WEPPartnerTest" enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSION_PARTNERCX" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.testscripts.daasui.WEPPartnerTest" />
+		</classes>
+	</test>
+
+	<test verbose="2" name="Partner Tests - WEPPartnerCustomersTest" enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSION_PARTNERCX" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.testscripts.daasui.WEPPartnerCustomersTest" />
+		</classes>
+	</test>
+  
+  	<test verbose="2" name="Partner Tests - WEPPartnerHelpAndSupportTest" enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSION_PARTNERCX" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.testscripts.daasui.WEPPartnerHelpAndSupportTest" />
+		</classes>
+	</test>
+  
+  	<test verbose="2" name="Partner Tests - WEPPartnerUsersTest" enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSION_PARTNERCX" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.testscripts.daasui.WEPPartnerUsersTest" />
+		</classes>
+	</test>
+
+	<test verbose="2" name="Partner Tests - WEPPartnerAndCustomerCreationTest" enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSION_PARTNERCX" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.testscripts.daasui.WEPPartnerAndCustomerCreationTest" />
+		</classes>
+	</test>
+
+	<test verbose="2" name="Partner Tests - OnboardingChecklistPartnerTest" enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSION_PARTNERCX" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.testscripts.daasui.OnboardingChecklistPartnerTest" />
+		</classes>
+	</test>
+
+	<test verbose="2" name="Partner Tests - WEPPartnerCatalogueRevampTest" enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSION_PARTNERCX" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.testscripts.daasui.WEPPartnerCatalogueRevampTest" />
+		</classes>
+	</test>
+
+	<test verbose="2" name="Partner Tests - PartnerCertificationTest" enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSION_PARTNERCX" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.testscripts.daasui.PartnerCertificationTest" />
+		</classes>
+	</test>
+
+	<test verbose="2" name="Partner Tests - WXPPartnerAnalyticsTest" enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSION_PARTNERCX" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.testscripts.daasui.WXPPartnerAnalyticsTest" />
+		</classes>
+	</test>
+
+	<test verbose="2" name="Partner Tests - WEPPartnerSubscriptionflowTest" enabled="true">
+    <groups>
+			<run>
+				<include name="REGRESSION_PARTNERCX" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.testscripts.daasui.WEPPartnerSubscriptionflowTest" />
+		</classes>
+	</test>
+      
+      <test verbose="2" name="License Tier Upgrade - WEPPartnerLicensesFlowTest" enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSION_PARTNERCX" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.testscripts.daasui.WEPPartnerLicensesFlowTest" />
+		</classes>
+	</test>
+
+	<test verbose="2" name="Partner Tests - WEPPartnerSubscriptionContractTest" enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSION_PARTNERCX" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.testscripts.daasui.WEPPartnerSubscriptionContractTest" />
+		</classes>
+	</test>
+
+	<test verbose="2" name="Partner Tests - WXPPartnerAddonsTest" enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSION_PARTNERCX" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.testscripts.daasui.WXPPartnerAddonsTest" />
+		</classes>
+	</test>
+
+	<test verbose="2" name="Partner Tests - WXPPartnerBusinessCardsTest" enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSION_PARTNERCX" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.testscripts.daasui.WXPPartnerBusinessCardsTest" />
+		</classes>
+	</test>
+
+	<test verbose="2" name="Partner Tests - WEPPartnerExperienceSnapshotTest" enabled="true">
+		<groups>
+			<run>
+				<include name="REGRESSION_PARTNERCX" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.testscripts.daasui.WEPPartnerExperienceSnapshotTest" />
+		</classes>
+	</test>
+
+</suite>

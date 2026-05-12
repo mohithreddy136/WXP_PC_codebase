@@ -1,0 +1,69 @@
+trigger:
+  branches:
+    include:
+      - master
+      - staging
+      - production
+
+pr:
+  branches:
+    include:
+      - master
+      - staging
+      - production
+
+resources:
+  repositories:
+    - repository: templates
+      type: githubenterprise
+      name: codeway/templates
+      endpoint: ghe
+
+variables:
+  - name: System.Debug
+    value: false
+  - group: wex_qa_automation
+
+pool: 'codeway-aws-win2022'
+
+stages:
+  - stage: PRBuildChecks
+    displayName: 'PR Build Checks'
+    jobs:
+      - job: RunUITestsOnAgentJob
+        timeoutInMinutes: 360
+        displayName: 'PR Build Checks'
+        steps:
+          - template: steps/aws/aws-assume-role-v0.yaml@templates
+            parameters:
+              roleARN: $(role_arn)
+              externalId: $(external_ID)
+          - task: Maven@3
+            inputs:
+                mavenPomFile: 'pom.xml'
+                mavenOptions: '-Xmx3072m'
+                javaHomeOption: 'JDKVersion'
+                jdkVersionOption: '1.11'
+                jdkArchitectureOption: 'x64'
+                publishJUnitResults: true
+                testResultsFiles: '**/surefire-reports/TEST-*.xml'
+                goals: 'clean package -DskipTests=true -DsuiteXmlFile=testng_ci_smoke.xml -DbrowserName=chrome -DbuildNumber=$(Build.SourceBranchName)-$(Build.BuildNumber)'
+
+          - task: CmdLine@2
+            inputs:
+              script: |
+                aws s3 cp $(Agent.BuildDirectory)/s/target/ s3://swapps-builds/Selenium_DaaS_Automation/$(Build.SourceBranchName)/ --recursive
+  - stage: GitTag
+    condition: and(succeeded(), in(variables['Build.SourceBranch'], 'refs/heads/master', 'refs/heads/staging', 'refs/heads/production'), in(variables['Build.Reason'], 'IndividualCI', 'Manual'))
+    jobs:
+     - job: GitTagging
+       displayName: Git version tagging
+       steps:
+       - template: /steps/git/git-persist-credentials-v0.yaml@templates
+       - template: steps/git/git-config-v0.yaml@templates
+         parameters:
+           gheUser: $(ghe_user)
+           gheToken: $(ghe_auth_token)
+       - template: /steps/git/github-tag-repository-v1.yaml@templates
+         parameters:
+            version: "$(Build.SourceBranchName)-$(Build.BuildNumber)"

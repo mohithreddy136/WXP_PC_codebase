@@ -1,0 +1,17 @@
+The scripts in this directory call a Maestro API which generates files in *.Properties format for the list of components provided.
+This is a very heavy operation for the Maestro servers to process, so its important that this is not called in any automated sense.
+
+The script generally takes around 45 minutes to run.
+Please only run this script manually and as rarely as possible because it is one of the performance-impacting operations that Maestro does.
+
+
+One other thing to be aware of - The scripts use component_name values to query the backend for each component. A problem may happen in that Component Names are not unique across the application.
+This could result in the wrong Component and subsequently the wrong *.properties files being returned.
+We could migrate the API to use component_id's instead (which are unique) but this would be some effort and its not deemed neccessary at this point.
+
+
+Maestro Repo Link
+https://github.azc.ext.hp.com/SWApps/maestro
+
+Link to API call in Controller - the API is called "ComponentAsProperties"
+https://github.azc.ext.hp.com/SWApps/maestro/blob/bab4b9192b341968a2221de4f6cdbf88130788fd/app/controllers/api/v1/export_controller.rb#L6

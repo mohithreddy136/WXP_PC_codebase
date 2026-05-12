@@ -1,0 +1,12 @@
+/target/
+/test-videos/
+/test-screenshots/
+/test-report/
+/test-output/
+/download/
+/log/
+.settings
+.svn
+/bin/
+/credentials/
+buildNumber.properties

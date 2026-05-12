@@ -1,0 +1,2 @@
+Serial Number (Serial Number or Asset Tag mandatory),Asset Tag (Serial Number or Asset Tag mandatory),Asset Type (Mandatory),Manufacturer,Manufacturer Date (mm/dd/yyyy),Lifecycle Status,Model,Asset Name,Alias,Asset Location,Department,Cost Center,Deployment Date (mm/dd/yyyy),Assigned Area,Retirement Date (mm/dd/yyyy),Warranty Name,Warranty Start Date (mm/dd/yyyy),Warranty End Date (mm/dd/yyyy),Warranty Desc,Field0,Field1,Field2
+AutomationAssetT1,Test AutoTagT1,PC,HP,3/13/2023,In Use,,,,,,,1/28/2024,,1/28/2028,,3/1/2025,3/1/2029,,AutoCF0,AutoCF1,AutoCF2

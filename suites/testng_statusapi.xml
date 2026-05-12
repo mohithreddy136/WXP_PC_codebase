@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="status_API suite" configfailurepolicy="continue">
+	
+	<listeners>
+		<listener class-name="com.basesource.utils.ExtentReport" />
+		<listener class-name="com.basesource.utils.RetryListener" />
+	</listeners>
+
+	<test name="Status API Tests" preserve-order="true">
+        <groups>
+            <run>
+                <include name="COMPONENT_STATUS_UPDATE"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.testscripts.daasui.StatusAPITest"/>   
+        </classes>
+    </test>
+</suite>

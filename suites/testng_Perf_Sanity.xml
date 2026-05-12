@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="integrationQA_Perf_Sanity suite" configfailurepolicy="continue">
+	
+	<listeners>
+		<listener class-name="com.basesource.utils.ExtentReport" />
+		<listener class-name="com.basesource.utils.RetryListener" />
+	</listeners>
+
+	<test name="Perf Sanity Tests" preserve-order="true">
+        <groups>
+            <run>
+                <include name="PERF_SANITY"/>
+            </run>
+        </groups>
+        <classes>
+             
+             <class name="com.testscripts.daasui.PerfEnvTesting"/>
+            
+             
+         <!--   <class name="com.testscripts.daasui.PerfEnvTesting"/>
+			<class name="com.testscripts.daasui.AnalyticsTest"/>
+            <class name="com.testscripts.daasui.WEPDeviceListTest"/>
+            <class name="com.testscripts.daasui.WEPScriptsTest"/>
+            <class name="com.testscripts.daasui.DEXTest"/>
+            <class name="com.testscripts.daasui.WEPSustainabilityTest"/>
+            <class name="com.testscripts.daasui.WEPCustomerHomeTest"/>
+            <class name="com.testscripts.daasui.WEPGroupsTest"/>
+            <class name="com.testscripts.daasui.WEPPolicyPageTest"/> 
+            <class name="com.testscripts.daasui.LogTest"/>
+            <class name="com.testscripts.daasui.SettingsTest"/>            
+            <class name="com.testscripts.daasui.WEPVyoptaIntegrationTest"/>
+            <class name="com.testscripts.daasui.WEPAlertsDashboardPageTest"/>  
+            <class name="com.testscripts.daasui.WEXHelpAndSupportTest"/>       -->
+        </classes>
+    </test>
+</suite>
