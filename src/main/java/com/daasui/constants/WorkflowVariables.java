@@ -73,7 +73,7 @@ public class WorkflowVariables {
 	public static final String Repairzoom = "Repair Zoom installation";
 	public static final String Dellcommand = "Run Dell Command Update";
 	public static final String ReuseWorkflow = "Reuse_Workflow_IST";
-	public static final String Password = "ATATT3xFfGF00kmn9SBXz44TPX4o0ZQ-0ZSsSVhhI9_IZcTXl4sg-vvqKxXEoC-oWWAoK6TnB3QtWW640v-qKWIo5Y_Lj9JdcwoOSg1lz3eAqyEU5K8GrwPHVvxXNDQMLFBmWrwMGqh8WDdm5sLF6i-D1KXcAwZAJyATROLEzKnoi-DOo6_lmzE=A17F0BB1";
+	public static final String Password = "";
 	public static final ArrayList<String> ExpectedResults =  new ArrayList<String>(Arrays.asList("BS_Static_Group_Assign_Policy","BS_Workflow_Static_Group"));
 	public static final ArrayList<String> updatedExpectedResults = new ArrayList<String>(Arrays.asList("BS_Static_Group_Assign_Policy", "BS_Static_Group_latest", "BS_Static_New_Group", "BS_static_group_creations"));
 	public static final String FleetAlertWORKFLOWNAME = "FleetAlert_Automation";
