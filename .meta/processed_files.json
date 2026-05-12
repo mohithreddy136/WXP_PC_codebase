@@ -1,4 +1,5 @@
 {
   "src/main/java/com/daasui/pages/AmazonSSOPage.java": "0b589806e9923f99409fe4612e82eb0d793e31b8",
-  "src/main/java/com/daasui/pages/AnalyticsPage.java": "839b360275ab5c6ae548bcac50fe5ee1374375e9"
+  "src/main/java/com/daasui/pages/AnalyticsPage.java": "839b360275ab5c6ae548bcac50fe5ee1374375e9",
+  "src/main/java/com/daasui/pages/BatchIOTEnrollmentPage.java": "b834c95947a56f7157d710a488e030af728764f3"
 }
