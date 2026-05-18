@@ -1,0 +1,10 @@
+{
+  "method": "verifyLabelVisibleWhenClickOnLegendsDonutChartFlexi",
+  "depends_on_methods": [
+    "getTextLanguage",
+    "switchToPreviousTabOfDashboardPage"
+  ],
+  "external_dependencies": [
+    "org.slf4j.Logger"
+  ]
+}
