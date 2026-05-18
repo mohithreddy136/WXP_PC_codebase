@@ -1,0 +1,57 @@
+{
+  "method": "verifyLabelHiddenWhenClickOnLegendsBar",
+  "actions": [
+    "build_actions",
+    "get_elements_until_visible",
+    "get_chart_labels",
+    "list_size_compare",
+    "loop_with_label",
+    "click",
+    "sleep",
+    "conditional_branch",
+    "wait_for_elements",
+    "hover",
+    "collect_text",
+    "string_compare_ignore_case",
+    "set_flags",
+    "return_boolean"
+  ],
+  "locators": [
+    "keyLegendLabel",
+    "keyDrillDownLabels",
+    "tooltipTextKey",
+    "keyDrillDownLabelsAllHidden"
+  ],
+  "waits": [
+    "sleeper(3000)",
+    "waitForElementsOfDashboardPage(keyDrillDownLabels)",
+    "sleeper(2000)"
+  ],
+  "assertions": [
+    "legend_and_drilldown_label_counts_match",
+    "all_drilldown_labels_hidden_when_all_legends_clicked",
+    "tooltip_texts_do_not_match_clicked_legend_label"
+  ],
+  "return_values": [
+    "boolean (true_if_labels_hidden_correctly)"
+  ],
+  "selenium_actions": [
+    "new Actions(getDriver())",
+    "Actions.moveToElement().build().perform()",
+    "WebElement.click()"
+  ],
+  "ui_interactions": [
+    "click_each_legend_label",
+    "verify_drilldown_labels_visibility_after_each_click",
+    "hover_over_each_drilldown_label_to_capture_tooltip"
+  ],
+  "reusable_helper_usage": [
+    "getDriver()",
+    "getElementsTillAllElementsVisibleofDashboardPage(String)",
+    "getChartLabelsDashboardPage(String)",
+    "sleeper(long)",
+    "verifyElementsOfDashboardPage(String)",
+    "waitForElementsOfDashboardPage(String)",
+    "getTextOfDashboardPage(String)"
+  ]
+}
