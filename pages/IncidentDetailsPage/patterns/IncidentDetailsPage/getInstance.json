@@ -1,0 +1,9 @@
+{
+  "method": "getInstance",
+  "pattern_detected": [
+    "double_checked_locking_singleton"
+  ],
+  "notes": [
+    "Implements lazy singleton with synchronized block; missing return statement in snippet may be a bug."
+  ]
+}
