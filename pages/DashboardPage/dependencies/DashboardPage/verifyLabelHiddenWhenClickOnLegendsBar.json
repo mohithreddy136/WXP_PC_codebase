@@ -1,0 +1,16 @@
+{
+  "method": "verifyLabelHiddenWhenClickOnLegendsBar",
+  "depends_on_methods": [
+    "getDriver",
+    "getElementsTillAllElementsVisibleofDashboardPage",
+    "getChartLabelsDashboardPage",
+    "verifyElementsOfDashboardPage",
+    "waitForElementsOfDashboardPage",
+    "getTextOfDashboardPage",
+    "sleeper"
+  ],
+  "external_dependencies": [
+    "org.openqa.selenium.WebElement",
+    "org.openqa.selenium.interactions.Actions"
+  ]
+}
