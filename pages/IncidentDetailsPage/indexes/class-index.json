@@ -3,6 +3,7 @@
     "getInstance",
     "IncidentDetailsPage",
     "getTextLanguage",
-    "matchTextOfIncidentDetailsPage"
+    "matchTextOfIncidentDetailsPage",
+    "verifyElementOfIncidentDetailsPage"
   ]
 }
