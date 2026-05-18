@@ -1,5 +1,6 @@
 {
   "IncidentDetailsPage": [
-    "getInstance"
+    "getInstance",
+    "IncidentDetailsPage"
   ]
 }
