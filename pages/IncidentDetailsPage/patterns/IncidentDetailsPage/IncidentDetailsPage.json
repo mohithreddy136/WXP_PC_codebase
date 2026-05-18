@@ -1,0 +1,9 @@
+{
+  "method": "IncidentDetailsPage",
+  "pattern_detected": [
+    "page_object_constructor"
+  ],
+  "notes": [
+    "Constructor likely wires WebDriver and page locators."
+  ]
+}
