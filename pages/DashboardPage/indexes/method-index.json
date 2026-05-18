@@ -6,5 +6,9 @@
   "verifyLabelVisibleWhenClickOnLegendsFlexi": {
     "class_name": "DashboardPage",
     "path": "pages/DashboardPage/methods/DashboardPage/verifyLabelVisibleWhenClickOnLegendsFlexi.json"
+  },
+  "verifyLabelVisibleWhenClickOnLegends": {
+    "class_name": "DashboardPage",
+    "path": "pages/DashboardPage/methods/DashboardPage/verifyLabelVisibleWhenClickOnLegends.json"
   }
 }
