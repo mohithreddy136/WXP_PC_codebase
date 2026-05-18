@@ -2,6 +2,7 @@
   "DashboardPage": [
     "verifyLabelHiddenWhenClickOnLegendsFlexi",
     "verifyLabelVisibleWhenClickOnLegendsFlexi",
-    "verifyLabelVisibleWhenClickOnLegends"
+    "verifyLabelVisibleWhenClickOnLegends",
+    "verifyLabelVisibleWhenClickOnLegendsDonutChartFlexi"
   ]
 }
