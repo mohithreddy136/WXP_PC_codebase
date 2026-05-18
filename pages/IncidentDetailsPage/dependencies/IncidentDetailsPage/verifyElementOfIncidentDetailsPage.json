@@ -1,0 +1,10 @@
+{
+  "method": "verifyElementOfIncidentDetailsPage",
+  "depends_on_methods": [
+    "verifyTextPresentOnElement"
+  ],
+  "cross_page_calls": [],
+  "helpers_or_utils": [
+    "LOGGER.error"
+  ]
+}
