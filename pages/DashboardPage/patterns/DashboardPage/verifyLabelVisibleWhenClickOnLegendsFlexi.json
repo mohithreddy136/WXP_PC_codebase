@@ -1,0 +1,8 @@
+{
+  "method": "verifyLabelVisibleWhenClickOnLegendsFlexi",
+  "pattern_detected": [
+    "pagination_rowcount_verification",
+    "tooltip_to_grid_rowcount_correlation",
+    "wait_and_switch_back_pattern"
+  ]
+}
