@@ -1,0 +1,11 @@
+{
+  "method": "getInstance",
+  "signals": [
+    "page_object_retrieval"
+  ],
+  "domain": "ui_automation",
+  "related_entities": [
+    "IncidentDetailsPage",
+    "WebDriver"
+  ]
+}
