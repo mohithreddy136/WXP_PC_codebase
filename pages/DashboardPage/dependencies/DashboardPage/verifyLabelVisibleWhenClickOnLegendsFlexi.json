@@ -1,0 +1,12 @@
+{
+  "method": "verifyLabelVisibleWhenClickOnLegendsFlexi",
+  "depends_on_methods": [
+    "waitForPageLoaded",
+    "getElementsOfDashboardPage",
+    "switchToPreviousTabOfDashboardPage",
+    "sleeper"
+  ],
+  "external_dependencies": [
+    "org.openqa.selenium.WebElement"
+  ]
+}
