@@ -1,0 +1,15 @@
+{
+  "method": "verifyLabelHiddenWhenClickOnLegendsFlexi",
+  "signals": [
+    "chart_legend_iteration",
+    "tooltip_count_extraction",
+    "drilldown_navigation"
+  ],
+  "domain": "analytics_dashboard_reporting",
+  "related_entities": [
+    "chart_legend",
+    "tooltip",
+    "drilldown_report",
+    "pagination"
+  ]
+}
