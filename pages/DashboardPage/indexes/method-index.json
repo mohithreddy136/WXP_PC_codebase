@@ -14,5 +14,9 @@
   "verifyLabelVisibleWhenClickOnLegendsDonutChartFlexi": {
     "class_name": "DashboardPage",
     "path": "pages/DashboardPage/methods/DashboardPage/verifyLabelVisibleWhenClickOnLegendsDonutChartFlexi.json"
+  },
+  "verifyLabelHiddenWhenClickOnLegendsBar": {
+    "class_name": "DashboardPage",
+    "path": "pages/DashboardPage/methods/DashboardPage/verifyLabelHiddenWhenClickOnLegendsBar.json"
   }
 }
