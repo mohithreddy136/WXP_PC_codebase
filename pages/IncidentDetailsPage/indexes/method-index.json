@@ -6,5 +6,9 @@
   "IncidentDetailsPage": {
     "class_name": "IncidentDetailsPage",
     "path": "pages/IncidentDetailsPage/methods/IncidentDetailsPage/IncidentDetailsPage.json"
+  },
+  "getTextLanguage": {
+    "class_name": "IncidentDetailsPage",
+    "path": "pages/IncidentDetailsPage/methods/IncidentDetailsPage/getTextLanguage.json"
   }
 }
