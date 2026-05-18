@@ -2,5 +2,9 @@
   "verifyLabelHiddenWhenClickOnLegendsFlexi": {
     "class_name": "DashboardPage",
     "path": "pages/DashboardPage/methods/DashboardPage/verifyLabelHiddenWhenClickOnLegendsFlexi.json"
+  },
+  "verifyLabelVisibleWhenClickOnLegendsFlexi": {
+    "class_name": "DashboardPage",
+    "path": "pages/DashboardPage/methods/DashboardPage/verifyLabelVisibleWhenClickOnLegendsFlexi.json"
   }
 }
