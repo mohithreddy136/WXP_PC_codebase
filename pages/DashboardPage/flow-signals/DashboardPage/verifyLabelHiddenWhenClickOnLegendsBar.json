@@ -1,0 +1,14 @@
+{
+  "method": "verifyLabelHiddenWhenClickOnLegendsBar",
+  "signals": [
+    "legend_visibility_toggle",
+    "drilldown_label_visibility_validation",
+    "tooltip_text_validation"
+  ],
+  "domain": "analytics_dashboard_reporting",
+  "related_entities": [
+    "bar_chart_legend",
+    "drilldown_label",
+    "tooltip"
+  ]
+}
