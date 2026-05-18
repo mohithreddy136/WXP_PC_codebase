@@ -1,0 +1,32 @@
+{
+  "method": "verifyLabelVisibleWhenClickOnLegendsDonutChartFlexi",
+  "actions": [
+    "loop",
+    "string_compare_ignore_case",
+    "set_flag",
+    "break_loop",
+    "log_error",
+    "switch_tab",
+    "return_boolean"
+  ],
+  "locators": [
+    "keyHeaderOnNextPage"
+  ],
+  "waits": [],
+  "assertions": [
+    "each_option_text_matches_localized_header_name"
+  ],
+  "return_values": [
+    "boolean flag"
+  ],
+  "selenium_actions": [
+    "switchToPreviousTabOfDashboardPage()"
+  ],
+  "ui_interactions": [
+    "validate_each_header_option_text_on_report_page"
+  ],
+  "reusable_helper_usage": [
+    "getTextLanguage(String,String,String)",
+    "switchToPreviousTabOfDashboardPage()"
+  ]
+}
