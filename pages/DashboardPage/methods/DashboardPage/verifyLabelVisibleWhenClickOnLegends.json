@@ -1,0 +1,47 @@
+{
+  "method": "verifyLabelVisibleWhenClickOnLegends",
+  "actions": [
+    "click",
+    "sleep",
+    "switch_tab",
+    "wait_for_page_load",
+    "get_elements",
+    "loop",
+    "string_compare",
+    "set_flag",
+    "return_boolean"
+  ],
+  "locators": [
+    "labelKey",
+    "keyHeaderOnNextPage",
+    "frameKey"
+  ],
+  "waits": [
+    "sleeper(3000)"
+  ],
+  "assertions": [
+    "all_header_options_match_expected_localized_values"
+  ],
+  "return_values": [
+    "boolean flag"
+  ],
+  "selenium_actions": [
+    "verifyElementIsClickableOfDashboardPage(String)",
+    "WebElement.click()",
+    "switchToDifferentTabOfDashboardPage()",
+    "switchToPreviousTabOfDashboardPage()"
+  ],
+  "ui_interactions": [
+    "click_first_chart_label_to_open_report",
+    "validate_report_header_options_against_expected"
+  ],
+  "reusable_helper_usage": [
+    "getElementsOfDashboardPage(String)",
+    "verifyElementIsClickableOfDashboardPage(String)",
+    "sleeper(long)",
+    "switchToDifferentTabOfDashboardPage()",
+    "waitForElementsOfDashboardPage(String)",
+    "switchToPreviousTabOfDashboardPage()",
+    "getTextLanguage(String,String,String)"
+  ]
+}
