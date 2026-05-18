@@ -1,0 +1,13 @@
+{
+  "method": "verifyElementOfIncidentDetailsPage",
+  "signals": [
+    "element_text_verification",
+    "error_logging"
+  ],
+  "domain": "ui_automation_validation",
+  "related_entities": [
+    "incident_details_page",
+    "ui_element",
+    "text"
+  ]
+}
