@@ -1,0 +1,9 @@
+{
+  "method": "getTextLanguage",
+  "pattern_detected": [
+    "i18n_properties_lookup"
+  ],
+  "notes": [
+    "Loads language-specific properties based on locale folder and language."
+  ]
+}
