@@ -2,6 +2,7 @@
   "IncidentDetailsPage": [
     "getInstance",
     "IncidentDetailsPage",
-    "getTextLanguage"
+    "getTextLanguage",
+    "matchTextOfIncidentDetailsPage"
   ]
 }
