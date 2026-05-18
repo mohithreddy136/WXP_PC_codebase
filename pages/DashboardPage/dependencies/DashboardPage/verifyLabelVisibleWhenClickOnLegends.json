@@ -1,0 +1,15 @@
+{
+  "method": "verifyLabelVisibleWhenClickOnLegends",
+  "depends_on_methods": [
+    "getElementsOfDashboardPage",
+    "verifyElementIsClickableOfDashboardPage",
+    "switchToDifferentTabOfDashboardPage",
+    "waitForElementsOfDashboardPage",
+    "switchToPreviousTabOfDashboardPage",
+    "getTextLanguage",
+    "sleeper"
+  ],
+  "external_dependencies": [
+    "org.openqa.selenium.WebElement"
+  ]
+}
