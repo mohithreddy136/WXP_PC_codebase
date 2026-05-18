@@ -1,0 +1,24 @@
+{
+  "method": "verifyElementOfIncidentDetailsPage",
+  "actions": [
+    "verify_text_on_element",
+    "exception_logging"
+  ],
+  "locators": [
+    "incidentDetailsPagePropertiesPageProperties.getProperty(key)"
+  ],
+  "waits": [],
+  "assertions": [
+    "verifyTextPresentOnElement"
+  ],
+  "return_values": [
+    "boolean"
+  ],
+  "selenium_actions": [],
+  "ui_interactions": [
+    "verify_text_present_on_element"
+  ],
+  "reusable_helper_usage": [
+    "verifyTextPresentOnElement"
+  ]
+}
