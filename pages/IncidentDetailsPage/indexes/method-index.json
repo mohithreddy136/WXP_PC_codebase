@@ -10,5 +10,9 @@
   "getTextLanguage": {
     "class_name": "IncidentDetailsPage",
     "path": "pages/IncidentDetailsPage/methods/IncidentDetailsPage/getTextLanguage.json"
+  },
+  "matchTextOfIncidentDetailsPage": {
+    "class_name": "IncidentDetailsPage",
+    "path": "pages/IncidentDetailsPage/methods/IncidentDetailsPage/matchTextOfIncidentDetailsPage.json"
   }
 }
