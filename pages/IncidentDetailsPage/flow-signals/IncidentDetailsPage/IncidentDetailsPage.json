@@ -1,0 +1,11 @@
+{
+  "method": "IncidentDetailsPage",
+  "signals": [
+    "page_object_construction"
+  ],
+  "domain": "ui_automation",
+  "related_entities": [
+    "IncidentDetailsPage",
+    "WebDriver"
+  ]
+}
