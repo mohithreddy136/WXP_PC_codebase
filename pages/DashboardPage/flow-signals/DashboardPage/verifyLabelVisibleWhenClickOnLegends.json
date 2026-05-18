@@ -1,0 +1,14 @@
+{
+  "method": "verifyLabelVisibleWhenClickOnLegends",
+  "signals": [
+    "drilldown_header_validation",
+    "localized_header_check"
+  ],
+  "domain": "analytics_dashboard_reporting",
+  "related_entities": [
+    "report_header",
+    "language",
+    "chart_label",
+    "iframe"
+  ]
+}
