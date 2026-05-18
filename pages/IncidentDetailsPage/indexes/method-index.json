@@ -1,0 +1,6 @@
+{
+  "getInstance": {
+    "class_name": "IncidentDetailsPage",
+    "path": "pages/IncidentDetailsPage/methods/IncidentDetailsPage/getInstance.json"
+  }
+}
