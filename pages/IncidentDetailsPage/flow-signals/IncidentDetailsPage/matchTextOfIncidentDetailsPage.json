@@ -1,0 +1,11 @@
+{
+  "method": "matchTextOfIncidentDetailsPage",
+  "signals": [
+    "text_match_intent"
+  ],
+  "domain": "ui_automation_validation",
+  "related_entities": [
+    "incident_details_page",
+    "ui_text"
+  ]
+}
