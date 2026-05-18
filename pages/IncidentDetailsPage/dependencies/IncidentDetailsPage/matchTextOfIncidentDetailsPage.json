@@ -1,0 +1,8 @@
+{
+  "method": "matchTextOfIncidentDetailsPage",
+  "depends_on_methods": [
+    "verifyElementOfIncidentDetailsPage"
+  ],
+  "cross_page_calls": [],
+  "helpers_or_utils": []
+}
