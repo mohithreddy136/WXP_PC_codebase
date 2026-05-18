@@ -1,0 +1,37 @@
+{
+  "method": "verifyLabelVisibleWhenClickOnLegendsFlexi",
+  "actions": [
+    "string_split",
+    "compare_strings",
+    "sleep",
+    "wait_for_page_load",
+    "list_size_compare",
+    "switch_tab",
+    "return_boolean"
+  ],
+  "locators": [
+    "columnListKey"
+  ],
+  "waits": [
+    "sleeper(2000)",
+    "waitForPageLoaded()"
+  ],
+  "assertions": [
+    "tooltipcount_matches_last_pagination_number_or_column_count"
+  ],
+  "return_values": [
+    "boolean flag"
+  ],
+  "selenium_actions": [
+    "switchToPreviousTabOfDashboardPage()"
+  ],
+  "ui_interactions": [
+    "validate_drilldown_grid_row_count_against_tooltip"
+  ],
+  "reusable_helper_usage": [
+    "sleeper(long)",
+    "waitForPageLoaded()",
+    "getElementsOfDashboardPage(String)",
+    "switchToPreviousTabOfDashboardPage()"
+  ]
+}
