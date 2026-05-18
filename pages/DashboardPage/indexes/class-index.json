@@ -3,6 +3,7 @@
     "verifyLabelHiddenWhenClickOnLegendsFlexi",
     "verifyLabelVisibleWhenClickOnLegendsFlexi",
     "verifyLabelVisibleWhenClickOnLegends",
-    "verifyLabelVisibleWhenClickOnLegendsDonutChartFlexi"
+    "verifyLabelVisibleWhenClickOnLegendsDonutChartFlexi",
+    "verifyLabelHiddenWhenClickOnLegendsBar"
   ]
 }
