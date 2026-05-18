@@ -1,0 +1,13 @@
+{
+  "method": "IncidentDetailsPage",
+  "actions": [
+    "constructor_initialization"
+  ],
+  "locators": [],
+  "waits": [],
+  "assertions": [],
+  "return_values": [],
+  "selenium_actions": [],
+  "ui_interactions": [],
+  "reusable_helper_usage": []
+}
