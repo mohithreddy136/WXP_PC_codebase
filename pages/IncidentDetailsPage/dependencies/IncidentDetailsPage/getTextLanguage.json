@@ -1,0 +1,8 @@
+{
+  "method": "getTextLanguage",
+  "depends_on_methods": [],
+  "cross_page_calls": [],
+  "helpers_or_utils": [
+    "incidentDetailsPagePropertiesReader.getLanguageObjectRepository"
+  ]
+}
