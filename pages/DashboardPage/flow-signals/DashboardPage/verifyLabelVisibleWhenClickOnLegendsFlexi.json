@@ -1,0 +1,13 @@
+{
+  "method": "verifyLabelVisibleWhenClickOnLegendsFlexi",
+  "signals": [
+    "drilldown_rowcount_validation",
+    "pagination_last_page_verification"
+  ],
+  "domain": "analytics_dashboard_reporting",
+  "related_entities": [
+    "drilldown_grid",
+    "pagination",
+    "tooltip_count"
+  ]
+}
