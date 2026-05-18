@@ -1,0 +1,15 @@
+{
+  "method": "getInstance",
+  "actions": [
+    "lazy_singleton_initialization"
+  ],
+  "locators": [],
+  "waits": [],
+  "assertions": [],
+  "return_values": [
+    "IncidentDetailsPage instance"
+  ],
+  "selenium_actions": [],
+  "ui_interactions": [],
+  "reusable_helper_usage": []
+}
