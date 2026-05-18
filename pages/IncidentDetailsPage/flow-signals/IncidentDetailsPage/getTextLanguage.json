@@ -1,0 +1,13 @@
+{
+  "method": "getTextLanguage",
+  "signals": [
+    "localized_text_resolution"
+  ],
+  "domain": "ui_automation_i18n",
+  "related_entities": [
+    "language",
+    "locale",
+    "key",
+    "properties_file"
+  ]
+}
