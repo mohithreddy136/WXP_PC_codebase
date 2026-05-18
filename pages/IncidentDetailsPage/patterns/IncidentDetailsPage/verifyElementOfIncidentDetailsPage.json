@@ -1,0 +1,10 @@
+{
+  "method": "verifyElementOfIncidentDetailsPage",
+  "pattern_detected": [
+    "property_based_locator_resolution",
+    "wrapped_verification_with_logging"
+  ],
+  "notes": [
+    "Resolves locator from properties and delegates to verification helper with error logging."
+  ]
+}
