@@ -1,0 +1,13 @@
+{
+  "method": "verifyLabelVisibleWhenClickOnLegendsDonutChartFlexi",
+  "signals": [
+    "donut_chart_drilldown_header_validation",
+    "localized_header_check"
+  ],
+  "domain": "analytics_dashboard_reporting",
+  "related_entities": [
+    "donut_chart",
+    "report_header",
+    "language"
+  ]
+}
