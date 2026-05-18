@@ -1,0 +1,6 @@
+{
+  "verifyLabelHiddenWhenClickOnLegendsFlexi": {
+    "class_name": "DashboardPage",
+    "path": "pages/DashboardPage/methods/DashboardPage/verifyLabelHiddenWhenClickOnLegendsFlexi.json"
+  }
+}
