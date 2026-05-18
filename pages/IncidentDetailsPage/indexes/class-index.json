@@ -1,6 +1,7 @@
 {
   "IncidentDetailsPage": [
     "getInstance",
-    "IncidentDetailsPage"
+    "IncidentDetailsPage",
+    "getTextLanguage"
   ]
 }
