@@ -1,0 +1,9 @@
+{
+  "method": "verifyLabelHiddenWhenClickOnLegendsBar",
+  "pattern_detected": [
+    "chart_legend_toggle_visibility_workflow",
+    "hover_and_tooltip_capture_pattern",
+    "wait_and_hover_pattern",
+    "conditional_early_return_pattern"
+  ]
+}
