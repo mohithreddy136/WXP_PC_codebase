@@ -10,5 +10,9 @@
   "verifyLabelVisibleWhenClickOnLegends": {
     "class_name": "DashboardPage",
     "path": "pages/DashboardPage/methods/DashboardPage/verifyLabelVisibleWhenClickOnLegends.json"
+  },
+  "verifyLabelVisibleWhenClickOnLegendsDonutChartFlexi": {
+    "class_name": "DashboardPage",
+    "path": "pages/DashboardPage/methods/DashboardPage/verifyLabelVisibleWhenClickOnLegendsDonutChartFlexi.json"
   }
 }
