@@ -1,0 +1,9 @@
+{
+  "method": "verifyLabelVisibleWhenClickOnLegends",
+  "pattern_detected": [
+    "safe_click_pattern",
+    "drilldown_navigation_workflow",
+    "localized_header_verification",
+    "wait_and_switch_back_pattern"
+  ]
+}
