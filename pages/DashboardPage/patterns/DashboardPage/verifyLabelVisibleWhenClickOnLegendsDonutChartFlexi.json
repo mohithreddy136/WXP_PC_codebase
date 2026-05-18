@@ -1,0 +1,8 @@
+{
+  "method": "verifyLabelVisibleWhenClickOnLegendsDonutChartFlexi",
+  "pattern_detected": [
+    "localized_header_verification",
+    "error_logging_on_timeout",
+    "tab_switch_back_pattern"
+  ]
+}
