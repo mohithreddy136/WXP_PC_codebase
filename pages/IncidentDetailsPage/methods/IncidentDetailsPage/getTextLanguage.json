@@ -1,0 +1,17 @@
+{
+  "method": "getTextLanguage",
+  "actions": [
+    "load_language_properties"
+  ],
+  "locators": [],
+  "waits": [],
+  "assertions": [],
+  "return_values": [
+    "localized_text_for_key"
+  ],
+  "selenium_actions": [],
+  "ui_interactions": [],
+  "reusable_helper_usage": [
+    "incidentDetailsPagePropertiesReader.getLanguageObjectRepository"
+  ]
+}
