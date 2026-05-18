@@ -14,5 +14,9 @@
   "matchTextOfIncidentDetailsPage": {
     "class_name": "IncidentDetailsPage",
     "path": "pages/IncidentDetailsPage/methods/IncidentDetailsPage/matchTextOfIncidentDetailsPage.json"
+  },
+  "verifyElementOfIncidentDetailsPage": {
+    "class_name": "IncidentDetailsPage",
+    "path": "pages/IncidentDetailsPage/methods/IncidentDetailsPage/verifyElementOfIncidentDetailsPage.json"
   }
 }
