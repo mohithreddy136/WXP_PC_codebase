@@ -1,0 +1,8 @@
+{
+  "method": "getInstance",
+  "depends_on_methods": [
+    "IncidentDetailsPage(WebDriver)"
+  ],
+  "cross_page_calls": [],
+  "helpers_or_utils": []
+}
