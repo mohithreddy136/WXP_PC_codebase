@@ -1,0 +1,15 @@
+{
+  "method": "verifyLabelHiddenWhenClickOnLegendsFlexi",
+  "depends_on_methods": [
+    "getElementsOfDashboardPage",
+    "waitForElementsOfDashboardPage",
+    "getTextOfDashboardPage",
+    "waitForPageLoaded",
+    "switchToDifferentTabOfDashboardPage",
+    "sleeper"
+  ],
+  "external_dependencies": [
+    "org.openqa.selenium.WebElement",
+    "org.openqa.selenium.interactions.Actions"
+  ]
+}
