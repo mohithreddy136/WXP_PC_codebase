@@ -1,0 +1,9 @@
+{
+  "method": "matchTextOfIncidentDetailsPage",
+  "pattern_detected": [
+    "documentation_only"
+  ],
+  "notes": [
+    "Javadoc describes text matching behavior; implementation appears in verifyElementOfIncidentDetailsPage."
+  ]
+}
