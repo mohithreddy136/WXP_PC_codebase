@@ -1,0 +1,10 @@
+{
+  "method": "verifyLabelHiddenWhenClickOnLegendsFlexi",
+  "pattern_detected": [
+    "wait_and_hover_pattern",
+    "tooltip_read_pattern",
+    "wait_and_click_pattern",
+    "tab_switch_workflow",
+    "chart_legend_iteration_workflow"
+  ]
+}
