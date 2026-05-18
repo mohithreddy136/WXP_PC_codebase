@@ -1,0 +1,15 @@
+{
+  "method": "matchTextOfIncidentDetailsPage",
+  "actions": [
+    "text_match_description_only"
+  ],
+  "locators": [],
+  "waits": [],
+  "assertions": [],
+  "return_values": [
+    "boolean_match_result"
+  ],
+  "selenium_actions": [],
+  "ui_interactions": [],
+  "reusable_helper_usage": []
+}
