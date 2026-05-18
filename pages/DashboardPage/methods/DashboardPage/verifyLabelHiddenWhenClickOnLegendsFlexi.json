@@ -1,0 +1,46 @@
+{
+  "method": "verifyLabelHiddenWhenClickOnLegendsFlexi",
+  "actions": [
+    "hover",
+    "wait",
+    "get_text",
+    "string_replace",
+    "parse_int",
+    "sleep",
+    "wait_for_page_load",
+    "click",
+    "switch_tab",
+    "conditional_branch"
+  ],
+  "locators": [
+    "labelsKey",
+    "tooltipTextKey"
+  ],
+  "waits": [
+    "waitForElementsOfDashboardPage(tooltipTextKey)",
+    "waitForPageLoaded()",
+    "sleeper(2000)",
+    "sleeper(3000)"
+  ],
+  "assertions": [],
+  "return_values": [],
+  "selenium_actions": [
+    "Actions.moveToElement().build().perform()",
+    "WebElement.click()",
+    "switchToDifferentTabOfDashboardPage()"
+  ],
+  "ui_interactions": [
+    "hover_on_chart_legend_label",
+    "read_tooltip_text_for_legend",
+    "click_legend_label_to_open_drilldown",
+    "switch_to_drilldown_tab"
+  ],
+  "reusable_helper_usage": [
+    "sleeper(long)",
+    "getElementsOfDashboardPage(String)",
+    "waitForElementsOfDashboardPage(String)",
+    "getTextOfDashboardPage(String)",
+    "waitForPageLoaded()",
+    "switchToDifferentTabOfDashboardPage()"
+  ]
+}
