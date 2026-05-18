@@ -1,5 +1,6 @@
 {
   "DashboardPage": [
-    "verifyLabelHiddenWhenClickOnLegendsFlexi"
+    "verifyLabelHiddenWhenClickOnLegendsFlexi",
+    "verifyLabelVisibleWhenClickOnLegendsFlexi"
   ]
 }
